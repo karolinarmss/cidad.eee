@@ -1,0 +1,1 @@
+Foi resolvido em 5 minutos o problema com a atualização da página

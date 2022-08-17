@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>CIDAD.EEE</title>   
+   <link rel="icon" href="icon.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+
+  <div class="cabecalho">
+     <button class="btn" data-target="#help" >
+        <img src="help_logo.png" height="50px">
+     </button>
+     <header>
+       <img src="icon_logo.png" height="60px">
+    </header> 
+    <button class="btn" data-target="#rank">
+        <img src="rank_logo.png" height="50px">
+    </button>
+ </div>
+
+<br>
+  <div class="alert-container" data-alert-container></div>
+  <div data-guess-grid class="guess-grid">
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+  </div>
+<br>
+  <div data-keyboard class="keyboard">
+    <button class="key" data-key="Q">Q</button>
+    <button class="key" data-key="W">W</button>
+    <button class="key" data-key="E">E</button>
+    <button class="key" data-key="R">R</button>
+    <button class="key" data-key="T">T</button>
+    <button class="key" data-key="Y">Y</button>
+    <button class="key" data-key="U">U</button>
+    <button class="key" data-key="I">I</button>
+    <button class="key" data-key="O">O</button>
+    <button class="key" data-key="P">P</button>
+    <div class="space"></div>
+    <button class="key" data-key="A">A</button>
+    <button class="key" data-key="S">S</button>
+    <button class="key" data-key="D">D</button>
+    <button class="key" data-key="F">F</button>
+    <button class="key" data-key="G">G</button>
+    <button class="key" data-key="H">H</button>
+    <button class="key" data-key="J">J</button>
+    <button class="key" data-key="K">K</button>
+    <button class="key" data-key="L">L</button>
+    <div class="space"></div>
+    <button data-enter class="key large">Enter</button>
+    <button class="key" data-key="Z">Z</button>
+    <button class="key" data-key="X">X</button>
+    <button class="key" data-key="C">C</button>
+    <button class="key" data-key="V">V</button>
+    <button class="key" data-key="B">B</button>
+    <button class="key" data-key="N">N</button>
+    <button class="key" data-key="M">M</button>
+    <button data-delete class="key large">Delete</button>
+  </div>
+
+
+
+
+
+ <div class="modal" id="help">
+    <div class="body">  
+    <button class="btn close-modal">&times;</button> 
+        <br>  
+    Descubra a cidade BRASILEIRA em 6 tentativas.
+        <br>
+        <img src="natal.png" height="100px">
+        <br>
+    As letras T e L <b>não</b> existem na palavra.
+        <br>
+        <br>
+    A letra N existe na palavra e está na posição correta.
+        <br>
+        <br>
+    A letra A existe na palavra e <b>não</b> está na posição correta.
+        <br>     
+        <br>   
+    Os acentos não são considerados.
+        <br>
+        <br>
+    As palavras podem possuir letras repetidas.
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+
+ <div class="modal" id="rank">
+  <button class="btn close-modal">&times;</button> 
+    <section id="estatisticas">
+      <h1 id="rankingtitle"> 📊 Ranking</h1>
+        <div class="entry">
+          <div class="label"> Jogados: </div>
+          <br>
+          <div class="value" stat="jogados">0</div>
+        </div>
+        <br>
+        <div class="entry">
+          <div class="label" id="vitoria"> Vitória no jogo:</div>
+          <br>
+          <div class="value" stat="vitoriaJogo">0</div>
+        </div>
+        <br>
+        <div class="entry">
+          <div class="label"> Sequência atual:</div>
+          <br>
+          <div class="value" stat="seqAtual">0</div>
+        </div>
+        <br>
+        <div class="entry">
+          <div class="label"> Melhor sequência:</div>
+          <br>
+          <div class="value" stat="melhorSeq">0</div>
+          <br>
+        </div>
+      </div>
+    </section>
+</div>
+
+
+
+
+
+
+</body>
+</html>
